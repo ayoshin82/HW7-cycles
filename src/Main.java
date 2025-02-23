@@ -1,3 +1,5 @@
+import java.time.Year;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -25,10 +27,25 @@ public class Main {
         {
             System.out.println();
             for (int d = 10; d > 0; d--) {
-                System.out.print(d+" ");
+                System.out.print(d + " ");
+            }
+        }
+        {
+            System.out.println("Задача 3");
+        }
+        int population = 12_000_000;
+        int born = 17;
+        int death = 8;
+        int dif = born - death;
+        for (int y = 1; y <= 10; y++) {
+            population = population + population / 1000 * dif;
+            {
+                System.out.println("Год" + " " + y + " " + "Численность населения составляет" + " " + population);
             }
         }
     }
 }
+
+
 
 
