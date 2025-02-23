@@ -43,6 +43,18 @@ public class Main {
                 System.out.println("Год" + " " + y + " " + "Численность населения составляет" + " " + population);
             }
         }
+        {
+            System.out.println("Задача 4");
+        }
+        int m = 15000;
+        int t = 0;
+        int v = 0;
+        while (t < 12_000_000) {
+            t = t + t / 100*7;
+            t = t + m;
+            v = v + 1;
+            System.out.println("Месяц" + v + "=" + t);
+        }
     }
 }
 
