@@ -49,14 +49,38 @@ public class Main {
         int m = 15000;
         int t = 0;
         int v = 0;
-        while (t < 12_000_000) {
-            t = t + t / 100*7;
+        while (t < 12000000) {
+            t = t + t / 100 * 7;
             t = t + m;
             v = v + 1;
-            System.out.println("Месяц" + v + "=" + t);
+            {
+                System.out.println("Месяц" + " " + v + "=" + t);
+            }
+        }
+        {
+            System.out.println("Задача 5");
+        }int s=0;
+        for (v=1; v<=60; v++) {
+            s = s + s / 100 * 7;
+            s = s + m;
+            if(v%6==0)
+            {
+                System.out.println("Месяц" + " " + v + "=" + s);
+            }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
